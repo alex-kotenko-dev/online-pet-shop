@@ -1,0 +1,88 @@
+.filters {
+  padding-bottom: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.priceFormInput {
+  border: 1px solid #DDDDDD;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  margin-left: 0.5rem;
+  padding-left: 12px;
+  outline: none; 
+}
+
+.discountedInput {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 0.5rem;
+} 
+
+.discountedInput:checked {
+  background-color: #0D50FF;
+}
+
+.discountedInput:checked::after {
+  content: '';
+  position: absolute;
+  left: 0.8rem;
+  top: 0.4rem;
+  width: 0.4rem;
+  height: 1rem;
+  border: solid white;
+  border-width: 0 0.25rem 0.25rem 0;
+  transform: rotate(45deg);
+}
+
+.discountedLabel {
+  display: flex;          
+  align-items: center;       
+  gap: 4px;                
+  user-select: none; 
+}
+
+.sortLabel {
+  display: inline-flex;      
+  align-items: center;     
+  gap: 0.5rem;               
+  cursor: pointer;
+  height: 2.5rem;            
+  line-height: 2.5rem;     
+}
+
+.sortLabel select {
+  border: none;
+  background-color: #ffffff;
+  padding: 0 1rem;           
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 2.5rem;           
+}
+
+.sortLabel select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.sortLabel select option {
+  color: #8B8B8B;
+  background-color: #ffffff;
+}
+
+.resetButton {
+  padding: 8px;
+  border: 1px solid #282828;
+  color: #282828;
+  font-size: 1rem;
+  background-color: white;
+}

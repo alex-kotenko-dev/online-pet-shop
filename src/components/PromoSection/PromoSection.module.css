@@ -1,0 +1,21 @@
+.imageContainer {
+  background-image: url('../../assets/images/promo.png');
+  height: 37.5rem;
+}
+
+.promo {
+  padding: 3rem;
+}
+
+.button {
+  padding: 1rem 4.5rem;
+  background-color: #0D50FF;
+  color: white;
+}
+
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 4rem;
+  }
+}

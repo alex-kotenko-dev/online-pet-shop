@@ -1,0 +1,97 @@
+.categoryContent {
+  padding: 0 1.5rem;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.productWrapper {
+  border: 1px solid rgb(185, 182, 182);
+  border-radius: 0.5rem;
+  padding-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.images {
+  width: 19rem;
+  height: 17.5rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.addToCartButton {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.productWrapper:hover .addToCartButton {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.categoryTitle {
+  color: #282828;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.productTitle {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.priceBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.newPrice {
+  font-size: 2rem;
+  color: #282828;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  padding-top: 0.75rem;
+}
+
+.discount {
+  position: absolute;
+  top: 1rem;     
+  right: 1rem;  
+  background-color: #0D50FF;  
+  color: white; 
+  padding: 2px 6px;
+  border-radius: 0.5rem;
+}
+
+.addToCartWrapper {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: relative;
+}
+
+.productWrapper:hover .addToCartWrapper {
+  opacity: 1;
+}
+
+
+@media (max-width: 1200px) {
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+}

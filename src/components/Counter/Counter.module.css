@@ -1,0 +1,45 @@
+.counter {
+  width: 12rem;
+  height: 3.5rem;
+  border: 1px solid #bbbdbb;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.btn {
+  height: 100%;
+  flex: 0 0 4rem;
+  border: none;
+  background: none;
+  color: #8B8B8B;
+  font-size: 2.5rem;
+  cursor: pointer;
+  flex: 0 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  user-select: none;
+}
+
+.btn:first-child {
+  border-right: 1px solid #bbbdbb;
+  border-radius: 8px;
+
+}
+
+.btn:last-child {
+  border-left: 1px solid #bbbdbb;
+  border-radius: 8px;
+}
+
+.value {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+

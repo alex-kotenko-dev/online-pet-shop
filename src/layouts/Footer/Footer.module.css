@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+}
+
+.box {
+  background-color: #F1F3F4;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+p {
+  color: #8B8B8B;
+}
+
+.icons_container {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.map {
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 80.5rem;
+  width: 100%;
+  height: 21rem;
+}

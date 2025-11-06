@@ -1,0 +1,79 @@
+.allProducts {
+  padding: 0 1.5rem;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.productWrapper {
+  border: 1px solid rgb(185, 182, 182);
+  border-radius: 0.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productWrapper:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.images {
+  width: 19rem;
+  height: 17.5rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.productTitle {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.priceBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.newPrice {
+  font-size: 2rem;
+  color: black;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  padding-top: 0.75rem;
+}
+
+.discount {
+  position: absolute;
+  top: 1rem;     
+  right: 1rem;  
+  background-color: #0D50FF;  
+  color: white; 
+  padding: 2px 6px;
+  border-radius: 0.5rem;
+}
+
+.addToCartWrapper {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.productWrapper:hover .addToCartWrapper {
+  opacity: 1;
+}
+
+
+@media (max-width: 1200px) {
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+}

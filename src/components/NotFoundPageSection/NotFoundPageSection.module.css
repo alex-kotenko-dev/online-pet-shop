@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.button {
+  width: 13rem;
+  padding: 1rem;
+  background-color: #0D50FF;
+  color: white;
+}

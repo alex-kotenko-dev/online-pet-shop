@@ -1,0 +1,77 @@
+.itemContainer {
+  width: 48rem;
+  height: 11rem;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  position: relative;
+}
+
+.details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.image {
+  width: 12rem;
+  height: 11rem;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.removeBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: none;
+  transition: color 0.2s ease;
+  font-size: 2rem;
+  color: #282828;
+}
+
+.removeBtn:hover {
+  background: none; /* убираем фон */
+  color: #000;
+}
+
+.detailsCountPrice {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+
+.priceBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding-left: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #282828;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  padding-top: 0.9rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+  .itemContainer {
+  width: 38rem;
+ }
+}

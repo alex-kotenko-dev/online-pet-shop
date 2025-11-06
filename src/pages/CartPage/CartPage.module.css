@@ -1,0 +1,68 @@
+.container {
+  padding: 1.5rem;
+}
+
+.containerFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.title {
+  padding-bottom: 1.5rem;
+}
+
+.headerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBtn {
+  padding: 0.5rem 2rem;
+  background-color: inherit;
+  border: 1px solid #DDDDDD;
+  color: #8B8B8B;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.navBtn:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+
+.line {
+  flex-grow: 1;       
+  height: 1px;
+  background-color: #ccc;
+  margin-left: 2rem;
+}
+
+
+/* emptyCart */
+.emptyCartContent {
+  color: #282828;
+}
+
+.btnEmptyCart {
+  width: 19rem;
+  height: 3.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: #0D50FF;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+
+@media (max-width: 1200px) {
+.containerFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+}

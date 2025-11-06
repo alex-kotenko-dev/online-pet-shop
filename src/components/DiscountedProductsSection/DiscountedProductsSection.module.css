@@ -1,0 +1,88 @@
+.container {
+  padding: 0 1.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+.allSalesBtn {
+  padding: 0.5rem 2rem;
+  background-color: inherit;
+  border: 1px solid #DDDDDD;
+  color: #8B8B8B;
+}
+
+.link {
+  padding-top: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.cardImage {
+  border: 1px solid rgb(185, 182, 182);
+  height: 27.5rem;
+  border-radius: 0.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardImage:hover {
+  transform: translateY(-10px) scale(1.03); 
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
+}
+
+.image {
+  width: 19rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 1rem;     
+  right: 1rem;  
+  background-color: #0D50FF;  
+  color: white; 
+  padding: 2px 6px;
+  border-radius: 0.5rem;
+}
+
+.cardTitle {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.newPrice {
+  font-size: 2rem;
+  color: black;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  padding-top: 0.75rem;
+}
+
+
+@media (max-width: 1200px) {
+ .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+}

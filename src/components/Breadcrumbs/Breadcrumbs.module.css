@@ -1,0 +1,35 @@
+.breadcrumb {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.breadcrumbLink,
+.breadcrumbCurrent {
+  padding: 0.5rem 2rem;
+  border: 1px solid #DDDDDD;
+  border-radius: 0.5rem;
+  background-color: inherit;
+  text-decoration: none;
+  color: #8B8B8B;
+}
+
+.breadcrumbLink:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+
+.breadcrumbCurrent {
+  color: black;
+}
+
+.separator {
+  color: #DDDDDD;
+}
