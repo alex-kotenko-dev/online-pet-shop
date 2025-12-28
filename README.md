@@ -30,4 +30,4 @@ This is a **frontend-only project** that interacts with a provided backend API (
 
 ## How to Run
 
-Start the backend first (see [pet-shop-backend](https://github.com/alex-kotenko-dev/pet-shop-backend))
+Start the backend first from the [pet-shop-backend](https://github.com/alex-kotenko-dev/pet-shop-backend) repository, then run `npm install` and `npm run dev` in this frontend repository
